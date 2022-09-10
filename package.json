@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-front",
+  "version": "1.0.0",
+  "description": "Portafolio",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jesús Farias",
+  "license": "ISC"
+}
