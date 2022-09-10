@@ -173,6 +173,7 @@ nav button {
   gap: 4rem;
 }
 
+
 /* ===================== HEADER ========================== */
 header {
   height: calc(100vh - 5rem);
@@ -219,6 +220,16 @@ header {
   font-size: 1.2rem;
 }
 
+@media (max-width: 768px) {
+  .header__socials{
+    right: 20%;
+    flex-direction: row;
+  }
+  .header__socials a{
+    font-size: 2.7rem;
+  }
+}
+
 .header__socials a {
   color: var(--color-white);
   transition: all 400ms ease;
@@ -239,13 +250,16 @@ header {
 }
 
 .profile-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   right: 5rem;
   margin-top: 10rem;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .profile-area{
+    display: none;
+  }
 }
 
 
@@ -317,6 +331,12 @@ section#companies {
   margin: 0;
 }
 
+@media (max-width:768px ) {
+  #companies{
+    height: 12rem;
+  }
+}
+
 .companies__container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -332,6 +352,13 @@ section#companies {
 section.skills .container {
   width: 50%;
 }
+
+@media (max-width: 768px) {
+  section.skills .container{
+    width: 80%;
+  }
+}
+
 
 section.skills .container .skill {
   margin-bottom: 1rem;
